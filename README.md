@@ -1,11 +1,6 @@
-<svg file="none" width="100%" height="100px" xmlns="http://www.w3.org/2000/svg">
-    <foreignObject width="100%" height="100%">
-        <img src="./github/logo.jpg" id="image" alt= "Logo" width="100px" height="value" style="border-radius: 50%; float: right;">
-
-# Sklep Internetowy (AgroPol - Sprzedawca Produktów Rolniczych)
-
-</foreignObject>
-</svg>
+<div align="center">
+    <img src="github/logo.svg" width="100%" height="100px" alt="logo">
+</div>
 
 ## Problematyka
 
