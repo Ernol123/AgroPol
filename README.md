@@ -1,11 +1,6 @@
-<style>
-    .image{
-        border-radius: 100px;
-        float: right;
-    }
-</style>
-
-<img src="./github/logo.jpg" class="image" alt= "Logo" width="100px" height="value">
+<svg file="none" width="100px" height="100px" >
+    <img src="./github/logo.jpg" id="image" alt= "Logo" width="100px" height="value" style="border-radius: 50%; float: right;">
+</svg>
 
 # Sklep Internetowy (AgroPol - Sprzedawca Produktów Rolniczych)
 
