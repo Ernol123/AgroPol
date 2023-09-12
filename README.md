@@ -1,4 +1,4 @@
-<img src="./github/logo.jpg" id="image" alt= "Logo" width="100px" height="value" style="border-radius: 50%; float: right;">
+<img align="rigth" src="./github/logo.jpg" id="image" alt= "Logo" width="100px" height="value" style="border-radius: 50%; float: right;">
 
 # Sklep Internetowy (AgroPol - Sprzedawca Produktów Rolniczych)
 
