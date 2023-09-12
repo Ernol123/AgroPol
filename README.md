@@ -1,6 +1,6 @@
-<div align="center">
-    <img src="github/logo.svg" width="100%" height="100px" alt="logo">
-</div>
+<img src="./github/logo.jpg" id="image" alt= "Logo" width="100px" height="value" style="border-radius: 50%; float: right;">
+
+# Sklep Internetowy (AgroPol - Sprzedawca Produktów Rolniczych)
 
 ## Problematyka
 
