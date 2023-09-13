@@ -35,3 +35,5 @@ Brak możliwości:
 ## Podsumowanie
 
 Projekt zakłada stworzenie sklepu internetowego do sprzedaży produktów rolniczych nowych i używanych. Wszystkie działania będą odbywać się poprzez sklep internetowy oraz po dokonaniu zakupu będzie dostępna możliwość dostawy na adres kupującego. Każdy produkt będzie posiadał cenę rynkową.
+
+### Autorzy: Kacper Jama, Ernest Iwan
