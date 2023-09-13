@@ -7,6 +7,7 @@
     <title>Agropol | Strona Główna</title>
     <link rel="icon" href="./github/logo.jpg" type="image/jpg">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/74557bc5d4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,6 +23,7 @@
         <a href="">Lorem</a>
     </div>
     <div class="login">
+        <i class="fa-solid fa-user"></i>
         <a href="">Logowanie</a>
         <a href="">Rejestracja</a>
     </div>
