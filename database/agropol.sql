@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 13 Wrz 2023, 14:13
+-- Czas generowania: 13 Wrz 2023, 14:30
 -- Wersja serwera: 10.4.22-MariaDB
 -- Wersja PHP: 8.1.2
 
@@ -43,6 +43,28 @@ CREATE TABLE `categories` (
   `name` varchar(100) COLLATE utf8mb4_polish_ci NOT NULL,
   `price_per_kilomiter` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+
+--
+-- Zrzut danych tabeli `categories`
+--
+
+INSERT INTO `categories` (`id`, `name`, `price_per_kilomiter`) VALUES
+(1, 'Traktory', 0.94),
+(2, 'Kombajny', 0.97),
+(3, 'Siewniki', 0.83),
+(4, 'Opryskiwacze', 0.83),
+(5, 'Pługi', 0.84),
+(6, 'Kultywatory', 0.84),
+(7, 'Przyczepy', 0.87),
+(8, 'Kosiarki Rolnicze', 0.86),
+(9, 'Prasy do siana', 0.87),
+(10, 'Uprawa Ziemniaków', 0.9),
+(11, 'Uprawa buraków', 0.9),
+(12, 'Paszowozy', 0.91),
+(13, 'Rozrzutniki', 0.89),
+(14, 'Rozsiewacze', 0.89),
+(15, 'Nawozy', 0.82),
+(16, 'Rośliny', 0.82);
 
 -- --------------------------------------------------------
 
@@ -160,7 +182,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT dla tabeli `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT dla tabeli `products`
