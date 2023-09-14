@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<select id="category">
+			<option value="Traktory">Traktory</option>
+			<option value="Kombajny">Kombajny</option>
+			<option value="Siewniki">Siewniki</option>
+			<option value="Opryskiwacze">Opryskiwacze</option>
+			<option value="Pługi">Pługi</option>
+			<option value="Kultywatory">Kultywatory</option>
+			<option value="Przyczepy">Przyczepy</option>
+			<option value="Kosiarki Rolnicze">Kosiarki Rolnicze</option>
+			<option value="Prasy do siana">Prasy Do Siana</option>
+			<option value="Uprawa Ziemniaków">Uprawa Ziemniaków</option>
+			<option value="Uprawa Buraków">Uprawa Buraków</option>
+			<option value="Paszowozy">Paszowozy</option>
+			<option value="Rozrzutniki">Rozrzutniki</option>
+			<option value="Rozsiewacze">Rozsiewacze</option>
+			<option value="Nawozy">Nawozy</option>
+			<option value="Rośliny">Rośliny</option>
+		</select>
+		<input type="text" id="mark" placeholder="Marka"/>
+		<input type="text" id="model" placeholder="Model"/>
+		<input type="text" id="fromCountry" placeholder="Kraj pochodzenia"/>
+		<input type="number" id="price" placeholder="Cena bez VAT"/>
+
+		<div id="specification">
+			<div class="specification" style="display: none;">
+				<input type="text" id="carSeatVersion" placeholder="Wersja siedzenia"/>
+				<input type="text" id="lightingVersion" placeholder="Wersja świateł"/>
+				<input type="text" id="equipmentVersion" placeholder="Wersja wyposażenia"/>
+				<input type="text" id="priceOfSpecification" placeholder="Cena wersji"/>
+			</div>
+		</div>
+		<button onclick="addSpecification()">
+			Dodaj opcje wyposażenia
+		</button>
+
+        <div id="engine"></div>
+            <div class="engine" style="display: none;">
+                <input type="text" id="enginePower" placeholder="Moc silnika"/>
+                <input type="text" id="displacement" placeholder="Pojemność skokowa"/>
+                <input type="text" id="numberOfCylinders" placeholder="Ilość cylindrów"/>
+                <input type="text" id="fuelTank" placeholder="Pojemność baku"/>
+                <input type="text" id="priceOfSpecification" placeholder="Cena wersji silnika"/>
+            </div>
+        </div>
+		<button onclick="addEngine()">Dodaj wersję silnika</button>
+
+		<input type="file" id="photo1" />
+		<input type="file" id="photo2" />
+		<input type="file" id="photo3" />
+		<input type="file" id="photo4" />
+		<input type="submit" value="Wyślij" onclick="add()" />
+		<p class="error"></p>
+		<script src="./script/form.js"></script>
+	</body>
+</html>
