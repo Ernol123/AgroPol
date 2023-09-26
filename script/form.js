@@ -1,5 +1,6 @@
 let i = 0;
 let j = 0;
+
 function add() {
 	const xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
@@ -12,6 +13,7 @@ function add() {
 
 	// '" . addslashes(file_get_contents($_FILES['zdjecie']['tmp_name'])) . "'
 }
+
 function sendFile() {
 	const xhr = new XMLHttpRequest();
 	const fd = new FormData();
@@ -44,4 +46,9 @@ function addEngine() {
 		element.id += i;
 	}
 	document.getElementById('engine').appendChild(clone);
+}
+
+function setForm() {
+	const select = document.getElementById('category');
+	console.log(select.value);
 }
