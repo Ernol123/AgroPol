@@ -10,28 +10,34 @@
 //     exit('Error: ' . $exc->getMessage());
 // }
 
-foreach($_POST as $key => $val){
+foreach ($_POST as $key => $val) {
     // echo "$key = $val";
-    if(str_starts_with($key,'photo') && empty($valu)){
+    if (str_starts_with($key, 'photo') && empty($valu)) {
         echo 'Dodoaj wszystkie zdjęcia';
         break;
-    } else if($key == 'category' && empty($val)){
+    } else if ($key == 'category' && empty($val)) {
         echo 'Wybierz kategorię';
         break;
-    } else if($key == 'mark' && empty($val)){
+    } else if ($key == 'mark' && empty($val)) {
         echo 'Podaj markę';
         break;
-    } else if($key == 'model' && $_POST['category'] != 'Nawozy' && $_POST['category'] != 'Rośliny' && empty($val)){
+    } else if ($key == 'model' && $_POST['category'] != 'Nawozy' && $_POST['category'] != 'Rośliny' && empty($val)) {
         echo 'Podaj model';
         break;
-    } else if($key == 'workingWidth' && $_POST['category'] != 'Traktory' && $_POST['category'] != 'Przyczepa' && $_POST['category'] != 'Paszowozy' && $_POST['category'] != 'Nawozy' && $_POST['category'] != 'Rośliny' && empty($val)){
+    } else if ($key == 'workingWidth' && $_POST['category'] != 'Traktory' && $_POST['category'] != 'Przyczepa' && $_POST['category'] != 'Paszowozy' && $_POST['category'] != 'Nawozy' && $_POST['category'] != 'Rośliny' && empty($val)) {
         echo 'Podaj szerokość roboczą';
         break;
-    } else if($key == 'fromCountry' && empty($val)){
+    } else if ($key == 'fromCountry' && empty($val)) {
         echo 'Podaj kraj pochodzenia';
         break;
-    } else if($key == 'price' && empty($val)){
-        echo 'Podaj kraj pochodzenia';
+    } else if ($key == 'price' && empty($val)) {
+        echo 'Podaj cenę';
+        break;
+    } else if ((is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'carSeatVersion') && empty($val)) || (is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'lightingVersion') && empty($val)) || (is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'equipmentVersion') && empty($val)) || (is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'priceOfEquipmentSpecification') && empty($val))) {
+        echo 'Uzupełnij wszystkie pola w opcjach wyposażenia';
+        break;
+    } else if ((is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'enginePower') && empty($val)) || (is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'displacement') && empty($val)) || (is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'numberOfCylinders') && empty($val)) || (is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'priceOfEngineSpecification') && empty($val)) || (is_numeric(substr($key, -1, 1)) && str_starts_with($key, 'fuelTank') && empty($val))) {
+        echo 'Uzupełnij wszystkie pola w opcjach wyposażenia';
         break;
     }
 }
